@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-var num = 10;
+var num = 0;
 let port = process.env.PORT || 3000;
 
 const nodemailer = require('nodemailer');
@@ -85,8 +85,8 @@ app.post('/test', urlencodedParser, (req, res) => {
   var mailOptions = {
     from: 'gevtest98@gmail.com',
     to: 'alen.abrahamyan7@tumo.org',
-    subject: 'Новые заказы '+num,
-    html: '<h1>Новые заказы</h1><p>' + req.body.step1 + '</p><p>' + req.body.step2 + '</p><p>' + req.body.step3 + '</p><p>' + req.body.step4 + '</p><p>' + req.body.step5 + '</p><p>' + req.body.step6 + '</p><p>' + req.body.phone + '</p>'
+    subject: 'Новые заказ '+num,
+    html: '<h1>Новые заказ</h1><p>' + req.body.step1 + '</p><p>' + req.body.step2 + '</p><p>' + req.body.step3 + '</p><p>' + req.body.step4 + '</p><p>' + req.body.step5 + '</p><p>' + req.body.step6 + '</p><p>' + req.body.phone + '</p>'
   };
   
   transporter.sendMail(mailOptions, function(error, info){
