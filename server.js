@@ -84,7 +84,7 @@ app.post('/test', urlencodedParser, (req, res) => {
 
   var mailOptions = {
     from: 'gevtest98@gmail.com',
-    to: 'alen.abrahamyan7@tumo.org',
+    to: 'fabrikakuhni.by@gmail.com',
     subject: 'Новые заказ '+num,
     html: '<h1>Новые заказ</h1><p>' + req.body.step1 + '</p><p>' + req.body.step2 + '</p><p>' + req.body.step3 + '</p><p>' + req.body.step4 + '</p><p>' + req.body.step5 + '</p><p>' + req.body.step6 + '</p><p>' + req.body.phone + '</p>'
   };
@@ -100,11 +100,6 @@ app.post('/test', urlencodedParser, (req, res) => {
  
 
 });
-
-
-
-
-
 
 
 
