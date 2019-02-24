@@ -48,7 +48,7 @@ app.post('/', urlencodedParser, (req, res) => {
 
   var mailOptions = {
     from: 'gevtest98@gmail.com',
-    to: 'alen.abrahamyan7@tumo.org',
+    to: 'fabrikakuhni.by@gmail.com',
     subject: 'Новые заказы '+num,
     html: '<h1>Новые заказы</h1><p>' + req.body.phone + '</p><p>' + req.body.item11 + '</p>'
   };
